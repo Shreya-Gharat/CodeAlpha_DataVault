@@ -1,0 +1,20 @@
+{
+  "name": "codealpha_datavault",
+  "version": "1.0.0",
+  "description": "Secure user data vault: SQL injection prevention, AES-256-GCM encryption, capability-token access control",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/injection-test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  }
+}
