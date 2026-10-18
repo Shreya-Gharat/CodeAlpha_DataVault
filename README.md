@@ -1,12 +1,12 @@
 # CodeAlpha_DataVault
 
-![npm test results](docs/test-results.png)
+![npm test results](docs/test-results.jpeg)
 
-![Encrypted data in the database](docs/encrypted-data.png)
+![Encrypted data in the database](docs/encrypted-data.jpeg)
 
-![RDS database](docs/rds-available.png)
+![RDS database](docs/rds-available.jpeg)
 
-![EC2 server](docs/ec2-running.png)
+![EC2 server](docs/ec2-running.jpeg)
 
 A small cloud-hosted user data vault built for the CodeAlpha Cloud Computing internship (Task 2).
 It stores user credentials and sensitive data securely and defends against SQL injection with layered controls.
