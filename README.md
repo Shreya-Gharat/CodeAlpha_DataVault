@@ -1,13 +1,5 @@
 # CodeAlpha_DataVault
 
-![npm test results](docs/test-results.jpeg)
-
-![Encrypted data in the database](docs/encrypted-data.jpeg)
-
-![RDS database](docs/rds-available.jpeg)
-
-![EC2 server](docs/ec2-running.jpeg)
-
 A small cloud-hosted user data vault built for the CodeAlpha Cloud Computing internship (Task 2).
 It stores user credentials and sensitive data securely and defends against SQL injection with layered controls.
 
@@ -71,3 +63,23 @@ Screenshot the result for your video.
 - The AES key lives in an environment variable. In production it should come from AWS KMS or Secrets Manager.
 - Regex detection can be evaded; parameterized queries and validation are the real defence.
 - Single instance, no auto-scaling.
+
+## Test evidence
+
+**All tests passing, including 5 blocked SQL injection payloads**
+
+<img src="docs/test-results.jpeg" width="600">
+
+**Passwords hashed with bcrypt and sensitive data encrypted with AES-256 in the database**
+
+<img src="docs/encrypted-data.jpeg" width="600">
+
+**Deployed on AWS: RDS database and EC2 server**
+
+<img src="docs/rds-available.jpeg" width="600">
+
+<img src="docs/ec2-running.jpeg" width="600">
+
+**Live health check**
+
+<img src="docs/health-check.png" width="600">
